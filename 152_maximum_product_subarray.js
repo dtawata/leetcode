@@ -17,6 +17,6 @@ const maxProduct = (nums) => {
   return res;
 };
 
-// const nums = [2,3,-2,4]; // 6
-const nums = [3,-1,4]; // 4
+// nums = [2,3,-2,4] // 6
+nums = [3,-1,4] // 4
 console.log(maxProduct(nums));

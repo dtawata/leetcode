@@ -18,5 +18,5 @@ const productExceptSelf = (nums) => {
   return res;
 };
 
-const nums = [1,2,3,4]; // [24,12,8,6]
+nums = [1,2,3,4] // [24,12,8,6]
 console.log(productExceptSelf(nums));

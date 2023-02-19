@@ -30,5 +30,5 @@ const orangesRotting = (grid) => {
   return fresh ? -1 : minutes;
 };
 
-const grid = [[2,1,1],[1,1,0],[0,1,1]]; // 4
+grid = [[2,1,1],[1,1,0],[0,1,1]] // 4
 console.log(orangesRotting(grid));

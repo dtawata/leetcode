@@ -1,6 +1,7 @@
 const findDuplicate = (nums) => {
   let slow = 0;
   let fast = 0;
+
   while (true) {
     slow = nums[slow];
     const step = nums[fast];
@@ -16,7 +17,9 @@ const findDuplicate = (nums) => {
     fast = nums[fast];
     if (slow === fast) return slow;
   }
+
+  return null;
 };
 
-const nums = [1,3,4,2,2]; // 2
+nums = [1,3,4,2,2] // 2
 console.log(findDuplicate(nums));
