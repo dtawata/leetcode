@@ -42,7 +42,7 @@ const lexicalOrder = (word1, word2) => {
 };
 
 // words = ['i','love','leetcode','i','love','coding'], k = 2 // ['i','love']
-words = ["the","day","is","sunny","the","the","the","sunny","is","is"], k = 4 //
+words = ['the','day','is','sunny','the','the','the','sunny','is','is'], k = 4 //
 console.log(topKFrequent(words, k));
 
 
