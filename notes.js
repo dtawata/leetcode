@@ -1,11 +1,16 @@
 // let result = Math.max(...nums);
-const maxSubArray = (nums) => {
-  let max = -Infinity;
-  let curr = 0;
-  for (const num of nums) {
-    curr += num;
-    max = Math.max(max, curr);
-    if (curr < 0) curr = 0;
+const combinationSum = (candidates, target) => {
+  const table = Array.from({length: target + 1}, () => {
+      return [];
+  });
+  table[0].push([]);
+  for (const candidate of candidates) {
+      for (let i = candidate; i <= target; i++) {
+          const diff = i - candidate;
+          for (const arr of table[diff]) {
+              table[i].push(arr.concat(candidate));
+          }
+      }
   }
-  return max;
+  return table[target];
 };
