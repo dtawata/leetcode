@@ -81,30 +81,35 @@
 // };
 
 
+// const threeSum = (nums) => {
+//   nums = nums.sort((a, b) => a - b);
+//   const res = [];
+//   let i = 0;
+//   let j = i + 1;
+//   let k = nums.length - 1;
+//   while (nums[i] < 1) {
+//     if (j >= k) {
+//       i++;
+//       j = i + 1;
+//       k = nums.length - 1;
+//       continue;
+//     }
+//     const sum = nums[i] + nums[k] + nums[j];
+//     if (sum === 0) {
+//       res.push([nums[i], nums[j], nums[k]]);
+//       k--;
+//     } else if (sum > 0) {
+//       k--;
+//     } else if (sum < 0) {
+//       j++;
+//     }
+//   }
+//   return res;
+// };
+
 const threeSum = (nums) => {
   nums = nums.sort((a, b) => a - b);
-  const res = [];
-  let i = 0;
-  let j = i + 1;
-  let k = nums.length - 1;
-  while (nums[i] < 1) {
-    if (j >= k) {
-      i++;
-      j = i + 1;
-      k = nums.length - 1;
-      continue;
-    }
-    const sum = nums[i] + nums[k] + nums[j];
-    if (sum === 0) {
-      res.push([nums[i], nums[j], nums[k]]);
-      k--;
-    } else if (sum > 0) {
-      k--;
-    } else if (sum < 0) {
-      j++;
-    }
-  }
-  return res;
+
 };
 
 nums = [-1,0,1,2,-1,-4] // [[-1,-1,2],[-1,0,1]]
