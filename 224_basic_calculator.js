@@ -8,7 +8,7 @@ const calculate = (s, start = 0) => {
     if (char === ' ') continue;
     if (char === ')') return plus ? [total + Number(curr), i] : [total - Number(curr), i];
     if (!isNaN(char)) {
-      curr = curr + char;
+      curr += char;
     } else if (char === '(') {
       [curr, i] = calculate(s, i + 1);
     } else {
