@@ -1,5 +1,6 @@
 // let result = Math.max(...nums);
 // go back to 721_merge_accounts
+// best way to check if something is a number?
 const updateMatrix = (mat) => {
   const table = Array.from({length: mat.length}, (val, index) => {
     return Array.from({length: mat[index].length});
